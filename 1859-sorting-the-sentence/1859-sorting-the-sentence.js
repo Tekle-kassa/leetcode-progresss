@@ -4,7 +4,6 @@
  */
 var sortSentence = function(s) {
     let str=s.split(' ')
-    let result=new Array(str.length)
     let words=new Array(str.length)
     for(let i=0;i<str.length;i++){
         let word=str[i]
