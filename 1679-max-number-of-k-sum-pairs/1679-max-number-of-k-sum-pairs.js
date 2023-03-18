@@ -10,7 +10,7 @@ var maxOperations = function(nums, k) {
     let counter=0
     while(i<j){
         if(nums[i]>k){
-            return counter
+            break
         }
         if(nums[i]+nums[j]===k){
             counter++
