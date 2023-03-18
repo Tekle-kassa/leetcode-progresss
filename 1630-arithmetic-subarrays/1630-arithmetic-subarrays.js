@@ -6,13 +6,11 @@
  */
 var checkArithmeticSubarrays = function(nums, l, r) {
     let temp=[]
-    let res=[]
-    
+    let res=[] 
     for(let i=0;i<l.length;i++){
         let j=0,k=1
         temp=nums.slice(l[i],r[i]+1)
         temp.sort((num1,num2)=>num1-num2)
-        console.log(temp)
         if(temp.length===2){
             res.push(true)
             continue
@@ -23,19 +21,13 @@ var checkArithmeticSubarrays = function(nums, l, r) {
                 k++
                 if(k+1===temp.length){
                     res.push(true)
-                    // j=0
-                    // k=1
                 }
                 
             }else{
                 res.push(false)
-                // j=0
-                // k=1
                 break
             }    
-        }
-        
-        
+        } 
     }
     return res
 };
