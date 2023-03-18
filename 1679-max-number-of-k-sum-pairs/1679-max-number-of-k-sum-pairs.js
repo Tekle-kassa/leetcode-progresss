@@ -5,7 +5,6 @@
  */
 var maxOperations = function(nums, k) {
     nums.sort((num1,num2)=>num1-num2)
-    console.log(nums)
     let i=0
     let j=nums.length-1
     let counter=0
