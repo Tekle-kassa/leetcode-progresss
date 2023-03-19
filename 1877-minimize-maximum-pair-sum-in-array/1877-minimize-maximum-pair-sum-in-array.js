@@ -12,6 +12,5 @@ var minPairSum = function(nums) {
         i++
         j--
     }
-    temp.sort((num1,num2)=>num1-num2)
-    return temp[temp.length-1]
+    return Math.max(...temp)
 };
