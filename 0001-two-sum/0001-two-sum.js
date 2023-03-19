@@ -6,7 +6,6 @@
 var twoSum = function(nums, target) {
     let i=0
     let j=nums.length-1
-    let temp=[]
     let obj1={}
     let ans=[]
     for(let k=0;k<nums.length;k++){
@@ -17,7 +16,6 @@ var twoSum = function(nums, target) {
         }else{
             obj1[nums[k]].push(k)
         }
-        
     }
     nums.sort(numCompare)
     let store=[]
