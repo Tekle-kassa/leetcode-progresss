@@ -3,19 +3,12 @@
  * @return {number}
  */
 var maxCoins = function(piles) {
+    let res=0
     piles.sort((num1,num2)=>num1-num2)
-    let freq=piles.length/3
-    let i=0
-    let j=piles.length-1
-    let counter=0
-    for(let k=0;k<freq;k++){
-        let temp=[]
-        temp.push(piles[j])
-        temp.push(piles[j-1])
-        temp.push(piles[i])
-        counter+=temp[1]
-        j-=2
-        i++
+    let i=piles.length-2
+    while(i>=piles.length/3){
+        res+=piles[i]
+        i-=2
     }
-    return counter
+    return res
 };
