@@ -5,10 +5,13 @@
 var minIncrementForUnique = function(nums) {
     nums.sort((a,b)=>a-b)
     let counter=0
-    for(let i=0;i<nums.length;i++){
-        while(nums[i]>=nums[i+1]){
+    let i=0
+    while(i<nums.length-1){
+        if(nums[i]<nums[i+1]){
+            i++
+        }else{
             nums[i+1]+=1
-            counter+=1
+            counter++
         }
     }
     return counter
