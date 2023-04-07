@@ -2,11 +2,8 @@ class Solution:
     def checkArithmeticSubarrays(self, nums: List[int], l: List[int], r: List[int]) -> List[bool]:
         ans=[]
         i=0
-        j=0
         while i in range(len(l)):
             temp=nums[l[i]:r[i]+1]
-            # for j in range(l[i],r[i]+1):
-            #     temp.append(nums[j])
             temp.sort()
             k=1
             if len(temp)==2:
@@ -21,7 +18,3 @@ class Solution:
                     break
             i+=1
         return ans
-                
-
-        
-        
