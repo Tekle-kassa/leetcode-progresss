@@ -4,9 +4,9 @@ class Solution:
         i=0
         j=0
         while i in range(len(l)):
-            temp=[]
-            for j in range(l[i],r[i]+1):
-                temp.append(nums[j])
+            temp=nums[l[i]:r[i]+1]
+            # for j in range(l[i],r[i]+1):
+            #     temp.append(nums[j])
             temp.sort()
             k=1
             if len(temp)==2:
