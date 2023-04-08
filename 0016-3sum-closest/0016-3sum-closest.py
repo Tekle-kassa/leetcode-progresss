@@ -1,7 +1,7 @@
 class Solution:
     def threeSumClosest(self, nums: List[int], target: int) -> int:
         nums.sort()
-        dif=inf
+        ref=inf
         ans=0
         for i in range(len(nums)):
             j=i+1
@@ -15,8 +15,8 @@ class Solution:
                     k-=1
                 else:
                     j+=1
-                if diff<dif:
-                    dif=diff
+                if diff<ref:
+                    ref=diff
                     ans=temp
         return ans
                 
