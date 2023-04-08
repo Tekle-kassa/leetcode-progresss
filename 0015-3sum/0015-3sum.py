@@ -14,6 +14,9 @@ class Solution:
                     j+=1
                 else:
                     k-=1
-        ans=[list(i) for i in res]
+        # ans=[list(i) for i in res]
+        ans=[]
+        for i in res:
+            ans.append(list(i))
         return ans
                 
