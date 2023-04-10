@@ -18,12 +18,12 @@ class Solution:
                     k-=1
         tot=0
         for i in res:
-            c=Counter(i)
+            # c=Counter(i)
             pr=1
             j=0
             while j<3:
-                inc=c[i[j]]
-                pr*=comb(counter[i[j]],c[i[j]])
+                inc=i.count(i[j])
+                pr*=comb(counter[i[j]],inc)
                 j+=inc
             tot+=pr
         return tot%((10**9)+7)
