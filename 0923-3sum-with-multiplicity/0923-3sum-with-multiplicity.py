@@ -16,11 +16,8 @@ class Solution:
                     j+=1
                 else:
                     k-=1
-        temp=[]
-        for i in res:
-            temp.append(list(i))
         tot=0
-        for i in temp:
+        for i in res:
             c=Counter(i)
             pr=1
             j=0
