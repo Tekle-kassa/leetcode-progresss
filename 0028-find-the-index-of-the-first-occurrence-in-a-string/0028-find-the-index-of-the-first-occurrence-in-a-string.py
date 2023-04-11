@@ -2,9 +2,6 @@ class Solution:
     def strStr(self, haystack: str, needle: str) -> int:
         i=0
         while i<len(haystack)-len(needle)+1:
-            # if haystack[i:i+len(needle)]==needle:
-            #     return i
-            # i+=1
             s=''
             for j in range(i,i+len(needle)):
                 s+=haystack[j]
