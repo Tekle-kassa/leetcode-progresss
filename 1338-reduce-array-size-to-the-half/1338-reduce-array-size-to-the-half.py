@@ -1,6 +1,6 @@
 class Solution:
     def minSetSize(self, arr: List[int]) -> int:
-        freq=[]
+        # freq=[]
         obj=Counter(arr)
         s_obj=sorted(obj.items(),reverse=True,key=lambda x:x[1])
         l=0
