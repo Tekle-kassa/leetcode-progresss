@@ -15,14 +15,13 @@ var minSetSize = function(arr) {
     for(let i in obj){
         freq.push([obj[i].length,parseInt(i)])
     }
-     freq.sort((num1,num2)=>num2[0]-num1[0])
-    let j=0
+    
+    freq.sort((num1,num2)=>num2[0]-num1[0])
     let len=0
     let count=0
     while(len<arr.length/2){
-       len+=freq[j][0]
+       len+=freq[count][0]
         count++
-        j++
     }
     return count
 
