@@ -16,8 +16,4 @@ class Solution:
             j=i
         for i in range(len(s)):
             chars[i]=s[i]
-        return len(s)   
-                
-            
-            
-        
+        return len(s) 
