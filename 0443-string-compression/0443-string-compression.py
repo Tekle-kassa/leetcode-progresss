@@ -2,10 +2,10 @@ class Solution:
     def compress(self, chars: List[str]) -> int:
         s=''
         j=0
-        if len(chars)==1:
-            s+=chars[0]
-            chars[0]=s[0]
-            return 1
+        # if len(chars)==1:
+        #     s+=chars[0]
+        #     chars[0]=s[0]
+        #     return 1
         while j<len(chars):
             i=j+1
             count=1
