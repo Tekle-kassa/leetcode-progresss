@@ -11,6 +11,8 @@ class Solution:
                 tr=row+1
             else:
                 break
+        if not tr<=br:
+            return False
         row=(tr+br)//2
         l,r=0,len(matrix[row])-1
         while l<=r:
