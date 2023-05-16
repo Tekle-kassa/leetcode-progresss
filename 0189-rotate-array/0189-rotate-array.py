@@ -3,17 +3,10 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        dif=len(nums)-k
-        while dif<0:
-            dif+=len(nums)
-        temp=[]
-        for i in range(dif,len(nums)):
-            temp.append(nums[i])
-        while dif<0:
-            dif+=len(nums)
-        for i in range(dif):
-            temp.append(nums[i])
-        i=0
-        while i<len(temp):
-            nums[i]=temp[i]
-            i+=1
+        dif=k%len(nums)
+        temp1=nums[:len(nums)-dif]
+        temp2=nums[len(nums)-dif:]
+        for i in range(len(temp2)):
+            nums[i]=temp2[i]
+        for i in range(len(temp1)):
+            nums[i+dif]=temp1[i]
