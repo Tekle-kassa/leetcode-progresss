@@ -1,10 +1,11 @@
 class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]: 
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         temp=Counter(nums)
-        freq=temp.most_common()
-        res=[]
+        x=sorted(temp.items(),key=lambda item:item[1],reverse=True)
         i=0
+        res=[]
         while i<k:
-            res.append(freq[i][0])
+            res.append(x[i][0])
             i+=1
         return res
+            
