@@ -10,15 +10,6 @@ class node:
 
 def delNode(head, k):
     # Code here
-    # temp=head
-    # # for i in range(k-1):
-    # #     temp=temp.next
-    # i=1
-    # while i<k-1:
-    #     temp=temp.next
-    # temp2=temp.next
-    # temp.next=temp2.next
-    # return head
     if k==1:
         temp=head.next
         head=temp
