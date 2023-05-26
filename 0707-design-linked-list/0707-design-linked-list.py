@@ -51,25 +51,6 @@ class MyLinkedList:
             else:
                 temp.next=node
 
-            
-            
-    #       if index==0:
-#             self.addAtHead(val)
-#             return
-#         i=0
-#         node=Node(val)
-#         temp=self.head
-#         while i<index-1:
-#             temp=temp.next
-#             i+=1
-#         if temp:
-#             if temp.next:
-#                 target=temp.next
-#                 temp.next=node
-#                 node.next=target
-#             else:temp.next=node
-        
-
     def deleteAtIndex(self, index: int) -> None:
         i=0
         temp=self.l.next
@@ -84,19 +65,7 @@ class MyLinkedList:
                 target=temp.next
                 temp.next=target.next
             
-        # if index==0:
-        #     self.head=self.head.next
-        #     return
-        # i=0
-        # temp=self.head
-        # while i<index-1:
-        #     temp=temp.next
-        #     i+=1
-        # target=temp.next
-        # if not target.next:
-        #     temp.next=None
-        # else:
-        #     temp.next=target.next
+
         
 
 
