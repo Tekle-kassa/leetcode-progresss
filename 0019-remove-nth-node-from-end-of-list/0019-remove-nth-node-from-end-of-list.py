@@ -15,7 +15,6 @@ class Solution:
             temp=temp.next
         idx=r-n 
         temp2=dummy.next
-        print(temp2)
         if idx==0:
             dummy.next=temp2.next
             return dummy.next
