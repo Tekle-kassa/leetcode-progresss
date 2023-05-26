@@ -14,7 +14,6 @@ class Solution:
             r+=1
             temp=temp.next
         idx=r-n 
-        print(idx)
         temp2=dummy.next
         print(temp2)
         if idx==0:
