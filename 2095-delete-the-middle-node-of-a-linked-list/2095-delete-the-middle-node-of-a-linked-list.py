@@ -19,12 +19,13 @@ class Solution:
         temp=dummy.next
         if n==0:
             dummy.next=temp.next
-            return dummy.next
-        while temp and j<n-1:
-            temp=temp.next
-            j+=1
-        if temp and temp.next:
-            temp.next=temp.next.next
+            # return dummy.next
+        else:
+            while temp and j<n-1:
+                temp=temp.next
+                j+=1
+            if temp and temp.next:
+                temp.next=temp.next.next
         return dummy.next
             
         
