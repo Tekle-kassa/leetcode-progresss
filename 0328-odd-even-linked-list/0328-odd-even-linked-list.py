@@ -10,7 +10,6 @@ class Solution:
         oddTail=head
         evenList=head.next
         evenHead=evenList
-      
         while evenList and evenList.next:
             oddTail.next=evenList.next
             oddTail=oddTail.next
