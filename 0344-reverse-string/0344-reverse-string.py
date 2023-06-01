@@ -3,10 +3,8 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
-        stack=[]
-        for i in range(len(s)):
-            stack.append(s[i])
-        i=0
-        while stack:
-            s[i]=stack.pop()
-            i+=1
+        def rev(l,r):
+            if l<r:
+                s[l],s[r]=s[r],s[l]
+                rev(l+1,r-1)
+        rev(0,len(s)-1)
