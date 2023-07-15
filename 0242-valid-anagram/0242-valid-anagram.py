@@ -9,7 +9,6 @@ class Solution:
                 temp1[s[i]]=1
             else:
                 temp1[s[i]]+=1
-        for i in range(len(t)):
             if not temp2[t[i]]:
                 temp2[t[i]]=1
             else:
