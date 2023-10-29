@@ -7,12 +7,12 @@ class Solution {
         
     }
     public void reverse(int[]nums,int start,int end){
-       while (start < end) {
+
+        for(int i=end;i>=start;i--){
             int temp = nums[start];
-            nums[start] = nums[end];
-            nums[end] = temp;
+            nums[start] = nums[i];
+            nums[i] = temp;
             start++;
-            end--;
         }
     }
 
