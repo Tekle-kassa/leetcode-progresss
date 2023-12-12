@@ -11,8 +11,8 @@ class Solution {
         while(i<nums.length){
             if(nums[i]>first){
                 int temp=first;
-                first=nums[i];
-                second=temp; 
+                second=first;
+                first=nums[i]; 
             }else if(nums[i]>second){
                 second=nums[i];
             }
