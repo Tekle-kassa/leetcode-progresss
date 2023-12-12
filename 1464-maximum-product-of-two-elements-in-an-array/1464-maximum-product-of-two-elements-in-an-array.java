@@ -10,7 +10,6 @@ class Solution {
         int i=2;
         while(i<nums.length){
             if(nums[i]>first){
-                int temp=first;
                 second=first;
                 first=nums[i]; 
             }else if(nums[i]>second){
