@@ -16,11 +16,8 @@ class Solution {
             else if(path.charAt(i)=='W'){
                 x--;
             }
-            if(temp.contains(x+","+y)){
-                return true;
-            }else{
-                temp.add(x+","+y);
-            }
+            if(temp.contains(x+","+y))return true;
+            temp.add(x+","+y);
         }
         return false;
     }
